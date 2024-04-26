@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+     /* Optional: changed background color for the whole page */
+     background-color: #eee7f4;
+}
+
+.form-container {
+    background-color: #7b2cbf;
+    width: 60vw; /* 30% of the viewport width */
+    /* width: 82vw; 30% of the viewport width */
+    height: 30vh; /* 30% of the viewport height */
+    border-radius: 20px; /* Adjusted for aesthetic */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+
+.upload-files-container {
+    background-color: #f7fff7;
+    width: 100%; /* Takes full width of the form-container */
+    height: 100%; /* Takes full height of the form-container */
+    padding: 20px; /* Adjust padding for smaller size */
+    border-radius: 20px; /* Consistent with the form-container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-file-area {
+    border: 2px dashed #7b2cbf;
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 10px; /* Reduced padding */
+    width: 90%; /* Reduced width to fit inside the container */
+    text-align: center;
+}
+
+.drag-file-area .upload-icon {
+    font-size: 30px; /* Reduced size for icons */
+}
+
+.drag-file-area h3 {
+    font-size: 16px; /* Adjusted text size for smaller display */
+}
+
+.drag-file-area label {
+    font-size: 14px; /* Smaller font size */
+}
+
+.drag-file-area label .browse-files-text {
+    color: #7b2cbf;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.browse-files span {
+    position: relative;
+    top: -25px; /* Adjust if necessary */
+}
+
+.default-file-input {
+    opacity: 0;
+}
+
+.cannot-upload-message {
+    background-color: #ffc6c4;
+    font-size: 14px; /* Smaller font size */
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #BB0000;
+    display: none; /* Only shown when needed */
+}
+
+.file-block {
+    color: #f7fff7;
+    background-color: #7b2cbf;
+    transition: all 1s;
+    width: 100%; /* Match the width of the container */
+    display: none; /* Only displayed when files are added */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.upload-button {
+    font-family: 'Montserrat';
+    background-color: #7b2cbf;
+    color: #f7fff7;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Slightly smaller font */
+    border: none;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 7.5px 20px; /* Adjusted padding */
+    cursor: pointer;
+}
+
+div.polaroid {
+  height: 50%;
+  width: 50%;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 5px 5px 10px #aaaaaa;
+}
